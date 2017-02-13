@@ -13382,17 +13382,14 @@ $$ F_{\beta} = (1 + \beta^2) \cdot \frac{precision \cdot recall}{\left( \beta^2 
 <ul>
 <li><p>It does not expect linear features. It can handle very well high dimensional spaces as well as large number of training examples.</p>
 </li>
-<li><p>It performs well with many kind of data without need to tune too much parameters. It is also fast and scalable.</p>
+<li><p>It is robust to overfitting. It performs well with many kind of data without need to tune too much parameters. It is also fast and scalable.</p>
 </li>
 <li><p>The trees in Random Forest are constructed independently, not consequential like Gradient Boost. So it is easier to parallelism.</p>
 </li>
 </ul>
 <p><strong>Weaknesses in general</strong>:</p>
 <ul>
-<li><p>It is less robust to overfitting than Logistic Regression.</p>
-</li>
-<li><p>The results are not interpretable.</p>
-</li>
+<li>Random Forest loses the interpretability and comprehension of the decision tree due to combining a bunch of trees. I mean a series of conditional questions leading to the predicted outcome class. </li>
 </ul>
 <p><strong>Reasons to be chosen</strong>:</p>
 <ul>
@@ -13418,8 +13415,6 @@ $$ F_{\beta} = (1 + \beta^2) \cdot \frac{precision \cdot recall}{\left( \beta^2 
 <li><p>It is les "general" than Random Forest. For each specified data, it needs to be tuned right to perform better. It has more parameters to tune than Random Forest, so it is harder to get right and more prone to overfitting.</p>
 </li>
 <li><p>Slower than Random Forest, especially training time.</p>
-</li>
-<li><p>The results are not interpretable</p>
 </li>
 </ul>
 <p><strong>Reasons to be chosen</strong>:</p>
